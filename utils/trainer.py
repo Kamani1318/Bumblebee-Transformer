@@ -41,7 +41,6 @@ def train(reprocess_input_data,overwrite_output_dir,max_seq_length,train_batch_s
     args=model_args,
     use_cuda=False)
     
-    run = wandb.init(project="Bumblebee-Transformer", entity="Kamani1317")
     training_notes,training_duration = preprocessing()
     train,label = sliding_window(training_notes,training_duration)
     training,validation = tokenising_data(train,label)
