@@ -1,6 +1,5 @@
 import argparse
-from trainer import train_model
-import wandb
+from utils.trainer import train_model
 
 def main(args):
     config = {
