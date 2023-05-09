@@ -13,7 +13,6 @@ from Sliding_Window import sliding_window
 from Tokenising_Data import tokenising_data
 import logging
 from simpletransformers.seq2seq import Seq2SeqModel, Seq2SeqArgs
-wandb.login()
 
 def train(reprocess_input_data,overwrite_output_dir,max_seq_length,train_batch_size,num_train_epochs,save_model_every_epoch,evaluate_generated_text,evaluate_during_training_verbose,use_multiprocessing,manual_seed, encoder_type1):
     
