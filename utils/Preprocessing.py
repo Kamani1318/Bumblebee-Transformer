@@ -10,7 +10,7 @@ import logging
 
 def preprocessing():
     string = input('Enter the location of the midi folder: ')
-    files = glob.glob(string)
+    files = glob.glob('/kaggle/input/testing1')
 
     training_notes = []
     training_duration = []
